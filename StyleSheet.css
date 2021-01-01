@@ -336,10 +336,6 @@ nav li a:hover {
     font-family: 'RalewayBold';
 }
 
-
-
-
-
 /*footer*/
 
 footer{
@@ -363,3 +359,81 @@ footer{
     text-decoration: none;
     color: black;
 }
+
+
+/*Media Queries Tablette*/
+@media only screen and (min-width: 768px){
+    #bouton_recherche_desktop {
+        display: block;
+        color: white;
+        background-color: #0065fc;
+        border-radius: 15px;
+        border: none;
+    }
+
+    #bouton_recherche_mobile{
+        display:none;
+    }
+
+    #hebergement_populaire {
+        font-size: 0.6em;
+    }
+
+    #section_hebergement{
+        display:flex;
+        flex-direction:column;
+    }
+
+    #vignettes_hebergement_populaire {
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+    }
+
+    .detail_vignette_populaire{
+        width:30%;
+    }
+
+    #hebergement_propose {
+        display: flex;
+        flex-direction: column;
+        order:-1;
+    }
+
+    #vignettes_hebergement_propose{
+        display:flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+        justify-content:space-between;
+    }
+
+    .detail_vignette_hebergement{
+        width:30%;
+    }
+
+    .vignette_activite{
+        display:flex;
+        flex-direction:row;
+    }
+
+    .triplette{
+        width:48%;
+        display:flex;
+        flex-direction:column;
+        padding:1em;
+    }
+
+    .detail_vignette_activite img{
+        width:455px;
+        height:303px;
+    }
+
+    footer{
+        display:flex;
+        flex-direction:row;
+        padding:1.5em;
+    }
+}
+
+
+/*Media Queries Ordinateur*/
