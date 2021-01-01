@@ -85,14 +85,15 @@ nav li a:hover {
 }
 
 #section_recherche{
-    margin:0em 1.2em 0em 1.2em;
+    margin:0em 1.2em 1em 1.2em;
 }
 
-#section_recherche span{
-    display:inline-block;
-    width:100%;
-    border:2px solid #f2f2f2;
-    border-radius:15px;
+#formulaire_recherche {
+    display: inline-block;
+    width: 100%;
+    border: 2px solid #f2f2f2;
+    border-radius: 15px;
+    margin-top:1em;
 }
 
 #section_recherche form{
@@ -247,23 +248,118 @@ nav li a:hover {
     color:#f2f2f2;
 }
 
-.notePop i:nth-child(-n+3) {
+.notePop i:nth-child(-n+4) {
     color: #0065fc;
 }
 
 #hebergement_propose {
-    padding: 2em;
+    padding: 2em 2em 1em 2em;
     font-size: 0.8em;
 }
 
-.detail_vignette_hebergement{
-
+.detail_vignette_hebergement {
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    margin-bottom: 1em;
+    border: 3px solid white;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .detail_vignette_hebergement img {
     width: 100%;
-    height: 115px;
+    height: 116px;
     object-fit: cover;
     object-position: center;
     border-radius: 15px 15px 0px 0px;
+}
+
+.detail_vignette_hebergement div{
+    padding:0em 0.6em;
+}
+
+.detail_vignette_hebergement h3,p{
+    margin:0.3em;
+}
+
+.note{
+    margin:0em 0em 0.3em 0.3em;
+}
+
+.note i {
+    color: #f2f2f2;
+}
+
+.note i:nth-child(-n+3) {
+    color: #0065fc;
+}
+
+#hebergement_propose a {
+    display:block;
+    text-decoration: none;
+    color: black;
+    font-family: 'RalewayBold';
+    margin-top:2em;
+}
+
+
+/*section Activités*/
+
+#section_activite {
+    padding:0.2em 2em 2em 2em;
+    font-size: 0.8em;
+}
+
+.detail_vignette_activite {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 1em;
+    border: 3px solid white;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.detail_vignette_activite img {
+    width: 100%;
+    height: 137px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.detail_vignette_activite p {
+    padding: 1em 0em 1em 0em;
+    font-family: 'RalewayBold';
+}
+
+
+
+
+
+/*footer*/
+
+footer{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    background-color:#f2f2f2;
+    padding-bottom:1em;
+}
+
+.pied_page {
+    padding: 0.2em 2em 0em 2em;
+    font-size: 0.8em;
+}
+
+.pied_page p{
+    margin-bottom:0.8em;
+}
+
+.pied_page a {
+    text-decoration: none;
+    color: black;
 }
