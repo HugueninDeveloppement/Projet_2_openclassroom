@@ -1,6 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\images",
+    "\\images\\Desktop",
+    "\\images\\Desktop\\Hebergements",
+    "\\images\\Mobile",
+    "\\images\\Mobile\\Hebergements",
+    "\\images\\Mobile\\Hebergements\\3_medium"
   ],
   "PreviewInSolutionExplorer": false
 }
