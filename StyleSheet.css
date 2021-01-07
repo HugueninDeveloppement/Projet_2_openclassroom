@@ -72,10 +72,17 @@ nav li a {
 
 nav li:hover {
     border-bottom: 3px solid #0065fc;
-    padding-top:47px;
 }
 
 nav li a:hover {
+    color: #0065fc;
+}
+
+nav li:first-child {
+    border-bottom: 3px solid #0065fc;
+}
+
+nav li:first-child > a {
     color: #0065fc;
 }
 
@@ -450,7 +457,6 @@ footer{
         justify-content:center;
     }
 
-
     #inscription_telephone{
         display:none;
     }
@@ -564,6 +570,10 @@ footer{
         border-top: 1px solid #0065fc;
         border-bottom:none;
     }
+    nav li:first-child {
+        border-top: 1px solid #0065fc;
+        border-bottom: none;
+    }
 
     #btn_inscription {
         color: #0065fc;
@@ -593,8 +603,12 @@ footer{
     }
 
     #filtre_recherche ul li{
-        margin-bottom:0px;
+        margin-bottom:15px;
         max-height:52px;
+    }
+
+    #filtre_recherche ul li:hover {
+        transform: scale(1.1);
     }
 
     #section_hebergement{
@@ -616,20 +630,27 @@ footer{
         background-color: #f2f2f2;
         border-radius: 15px;
         font-size:0.75em;
-        padding:2em 3em 0px 3em;
+        padding:2em 3.5em 0px 3.5em;
+    }
+
+    #hebergement_populaire h2{
+        width:100%;
     }
 
     #vignettes_hebergement_populaire {
         display: flex;
         flex-direction: column;
+        align-items:center;
     }
 
     .detail_vignette_populaire{
         width:100%;
+        max-height:132px;
     }
 
     .detail_vignette_populaire img {
-        width: 36%;
+        max-width:130px;
+        min-widht:130px;
     }
 
     .detail_vignette_activite p{
