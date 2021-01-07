@@ -72,6 +72,7 @@ nav li a {
 
 nav li:hover {
     border-bottom: 3px solid #0065fc;
+    padding-top:47px;
 }
 
 nav li a:hover {
@@ -593,6 +594,7 @@ footer{
 
     #filtre_recherche ul li{
         margin-bottom:0px;
+        max-height:52px;
     }
 
     #section_hebergement{
