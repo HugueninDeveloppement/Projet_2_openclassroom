@@ -274,6 +274,10 @@ nav li:first-child > a {
     font-size: 0.8em;
 }
 
+#hebergement_propose h2{
+    margin-bottom:1.1em;
+}
+
 .detail_vignette_hebergement a{
     display:flex;
     flex-direction:column;
@@ -297,12 +301,16 @@ nav li:first-child > a {
     padding:0em 0.6em;
 }
 
-.detail_vignette_hebergement h3,p{
-    margin:0.3em;
+.detail_vignette_hebergement h3{
+    margin:0.3em 0em 0.3em 0em;
+}
+
+.detail_vignette_hebergement p {
+    margin: 0.3em 0em 0.3em 0em;
 }
 
 .note{
-    margin:0em 0em 0.3em 0.3em;
+    margin:0em 0em 0.5em 0em;
 }
 
 .note i {
@@ -325,6 +333,7 @@ nav li:first-child > a {
 #hebergement_propose a {
     text-decoration: none;
     color: black;
+    font-size:1.1em;
 }
 
 
@@ -341,7 +350,7 @@ nav li:first-child > a {
 /*section Activités*/
 
 #section_activite {
-    padding:0.2em 2em 2em 2em;
+    padding:0.2em 1.4em 2em 1.4em;
     font-size: 0.8em;
 }
 
@@ -369,7 +378,7 @@ nav li:first-child > a {
 }
 
 .detail_vignette_activite p {
-    padding: 1em 0em 1em 0em;
+    padding: 0.1em 0em 0.2em 0.8em;
     font-family: 'RalewayBold';
     color: black;
 }
@@ -513,12 +522,13 @@ footer{
     }
 
     .detail_vignette_populaire img {
-        width: 50%;
+        width: 40%;
     }
 
     .texte_vignette_populaire {
         font-size: 1.2em;
         margin-top:0.5em;
+        padding:0em 0em 0.3em 0.3em;
     }
 
     .triplette {
@@ -554,7 +564,7 @@ footer{
     }
 
     main{
-        padding:0px 49px;
+        padding:0em 2.3em;
     }
 
     #header_mobile{
@@ -655,14 +665,14 @@ footer{
     }
 
     #hebergement_propose{
-        width:62%;
+        width:60%;
         background-color:#f2f2f2;
         border-radius:15px;
-        padding-bottom:49px;
+        padding:2em 3em 3em 3em;
     }
 
     #hebergement_populaire {
-        width: 27%;
+        width: 25%;
         background-color: #f2f2f2;
         border-radius: 15px;
         font-size:0.75em;
