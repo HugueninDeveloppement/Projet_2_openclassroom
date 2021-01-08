@@ -216,7 +216,7 @@ nav li:first-child > a {
 /*Section hebergements populaires et hebergements proposés*/
 #hebergement_populaire{
     background-color:#f2f2f2;
-    padding:2.5em;
+    padding:1.45em;
     font-size:0.8em;
 }
 
@@ -242,16 +242,14 @@ nav li:first-child > a {
 
 
 .detail_vignette_populaire img {
-    min-width: 127px;
-    max-width: 128px;
+    width:127px;
     height:134px;
     object-fit: cover;
-    object-position:center;
     border-radius:15px 0px 0px 15px;
 }
 
 .texte_vignette_populaire {
-    padding-left: 1em;
+    padding-left:1em;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -259,8 +257,12 @@ nav li:first-child > a {
 }
 
 
-.notePop i {
+.notePop i{
     color: #f2f2f2;
+}
+
+#NPop1 i:nth-child(-n+5) {
+    color: #0065fc;
 }
 
 .notePop i:nth-child(-n+4) {
@@ -268,7 +270,7 @@ nav li:first-child > a {
 }
 
 #hebergement_propose {
-    padding: 2em 2.7em 1em 2.7em;
+    padding: 2em 1.45em 1em 1.45em;
     font-size: 0.8em;
 }
 
@@ -306,8 +308,17 @@ nav li:first-child > a {
 .note i {
     color: #f2f2f2;
 }
+/*mise en place des notes pour chaques vignettes*/
 
 .note i:nth-child(-n+3) {
+    color: #0065fc;
+}
+
+#N2 i:nth-child(-n+5), #N6 i:nth-child(-n+5) {
+    color: #0065fc;
+}
+
+#N1 i:nth-child(-n+4), #N3 i:nth-child(-n+4) {
     color: #0065fc;
 }
 
@@ -424,6 +435,11 @@ footer{
 
     .detail_vignette_populaire{
         width:30%;
+        font-size:1.25em;
+    }
+
+    .detail_vignette_populaire img{
+        width:40%;
     }
 
     #hebergement_propose {
@@ -502,6 +518,7 @@ footer{
 
     .texte_vignette_populaire {
         font-size: 1.2em;
+        margin-top:0.5em;
     }
 
     .triplette {
@@ -663,21 +680,27 @@ footer{
     }
 
     .detail_vignette_populaire {
-        width:100%;
-        max-height:132px;
+        width:100%;  
+        font-size:1.1em;
     }
 
     .detail_vignette_populaire img {
-        max-width:130px;
-        min-width:130px;
+        width: 130px;
     }
 
-    .detail_vignette_activite p{
-        margin:auto auto auto 0.3em;
+    .texte_vignette_populaire p {
+        margin: 1px 0px 1px 0px;
     }
 
     .texte_vignette_populaire {
-        padding-right: 3em;
+        max-height:134px;
+        padding: 0.3em 1.1em 0.3em 0.3em;
+        margin: 1px 0.3em 1px 0.1em;
+        font-size:1.1em;
+    }
+
+    .texte_vignette_populaire h3{
+        margin:2px 0px 5px 0px;
     }
 
     .triplette {
@@ -713,11 +736,11 @@ footer{
         width:100%;
     }
 
-    .vignette_activite_double .detail_vignette_activite:first-child {
+    .vignette_activite_double .detail_vignette_activite a:first-child{
         height: 208px;
     }
 
-    .vignette_activite_double .detail_vignette_activite:nth-child(2) {
+    .vignette_activite_double .detail_vignette_activite:nth-child(2) >a{
         height: 174px;
     }
 
