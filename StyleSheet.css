@@ -227,12 +227,17 @@ nav li:first-child > a {
 }
 
 .detail_vignette_populaire {
-    display: flex;
-    flex-direction: row;
     background-color: white;
     border: 5px solid white;
     border-radius: 15px;
     margin-bottom: 0.8em;
+}
+
+.detail_vignette_populaire a {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color:black;
 }
 
 
@@ -245,12 +250,12 @@ nav li:first-child > a {
     border-radius:15px 0px 0px 15px;
 }
 
-.texte_vignette_populaire{
-    padding-left:1em;
-    display:flex;
-    flex-direction:column;
-    justify-content:space-between;
-    padding-bottom:1em;
+.texte_vignette_populaire {
+    padding-left: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 1em;
 }
 
 
@@ -267,7 +272,7 @@ nav li:first-child > a {
     font-size: 0.8em;
 }
 
-.detail_vignette_hebergement {
+.detail_vignette_hebergement a{
     display:flex;
     flex-direction:column;
     justify-content:flex-start;
@@ -307,11 +312,18 @@ nav li:first-child > a {
 }
 
 #hebergement_propose a {
-    display:block;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+#afficher_plus {
+    display: block;
     text-decoration: none;
     color: black;
     font-family: 'RalewayBold';
-    margin-top:2em;
+    margin-top: 2em;
 }
 
 
@@ -322,7 +334,7 @@ nav li:first-child > a {
     font-size: 0.8em;
 }
 
-.detail_vignette_activite {
+.detail_vignette_activite a {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -331,6 +343,10 @@ nav li:first-child > a {
     border-radius: 15px;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    text-decoration: none;
+}
+
+.detail_vignette_activite a {
 }
 
 .detail_vignette_activite img {
@@ -344,6 +360,7 @@ nav li:first-child > a {
 .detail_vignette_activite p {
     padding: 1em 0em 1em 0em;
     font-family: 'RalewayBold';
+    color: black;
 }
 
 /*footer*/
@@ -645,7 +662,7 @@ footer{
         align-items:center;
     }
 
-    .detail_vignette_populaire{
+    .detail_vignette_populaire {
         width:100%;
         max-height:132px;
     }
