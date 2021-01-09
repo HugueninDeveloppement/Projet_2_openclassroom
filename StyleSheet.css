@@ -252,7 +252,7 @@ nav li:first-child > a {
     padding-left:1em;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-bottom: 1em;
 }
 
@@ -412,19 +412,29 @@ footer{
 @media only screen and (min-width: 768px){
 
     #header_mobile {
-        padding: 0px 1.3em;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #inscription_telephone {
+        display: none;
+    }
+
+    #inscription_desktop {
+        display: block;
+    }
+
+    #formulaire_recherche {
+        width: 55%;
+    }
+
+    #champ_recherche {
+        padding-left: 3em;
     }
 
     #bouton_recherche_desktop {
-        display: block;
-        color: white;
-        background-color: #0065fc;
-        border-radius: 15px;
-        border: none;
-    }
-
-    #bouton_recherche_mobile{
-        display:none;
+        width: 125px;
     }
 
     #hebergement_populaire {
@@ -493,33 +503,7 @@ footer{
 
 
 /*Media Queries Ordinateur Portable*/
-@media only screen and (min-width: 1100px){
-
-    #header_mobile{
-        display:flex;
-        flex-direction:row;
-        justify-content:center;
-    }
-
-    #inscription_telephone{
-        display:none;
-    }
-
-    #inscription_desktop{
-        display:block;
-    }
-
-    #formulaire_recherche{
-        width:55%;
-    }
-
-    #champ_recherche{
-        padding-left:3em;
-    }
-
-    #bouton_recherche_desktop{
-        width:125px;
-    }
+@media only screen and (min-width: 1100px){    
 
     .detail_vignette_populaire img {
         width: 40%;
@@ -696,6 +680,7 @@ footer{
 
     .detail_vignette_populaire img {
         width: 130px;
+        min-width:130px;
     }
 
     .texte_vignette_populaire p {
@@ -703,11 +688,18 @@ footer{
     }
 
     .texte_vignette_populaire {
-        max-height:134px;
-        padding: 0.3em 1.1em 0.3em 0.3em;
-        margin: 1px 0.3em 1px 0.1em;
-        font-size:1.1em;
+        max-height: 134px;
+        font-size: 1.1em;
+        display: flex;
+        flex-direction: column;
+        margin:0px;
     }
+
+    .text{
+        width:90%;  
+        min-width:130px;
+    }
+
 
     .texte_vignette_populaire h3{
         margin:2px 0px 5px 0px;
