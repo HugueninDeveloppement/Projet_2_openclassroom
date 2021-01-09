@@ -738,11 +738,11 @@ footer{
         width:100%;
     }
 
-    .vignette_activite_double .detail_vignette_activite a:first-child{
+    .vignette_activite_double .detail_vignette_activite a:first-child > img{
         height: 208px;
     }
 
-    .vignette_activite_double .detail_vignette_activite:nth-child(2) >a{
+    .vignette_activite_double .detail_vignette_activite:nth-child(2) > img{
         height: 174px;
     }
 
