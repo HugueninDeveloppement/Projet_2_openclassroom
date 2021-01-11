@@ -74,15 +74,15 @@ nav li:hover {
     border-bottom: 3px solid #0065fc;
 }
 
-nav li a:hover {
+nav li:hover > a {
     color: #0065fc;
 }
 
-nav li:first-child {
+#en-cours {
     border-bottom: 3px solid #0065fc;
 }
 
-nav li:first-child > a {
+#en-cours a {
     color: #0065fc;
 }
 
@@ -503,7 +503,8 @@ footer{
 
 
 /*Media Queries Ordinateur Portable*/
-@media only screen and (min-width: 1100px){    
+@media only screen and (min-width: 1100px){
+
 
     .detail_vignette_populaire img {
         width: 40%;
@@ -600,7 +601,7 @@ footer{
         border-top: 1px solid #0065fc;
         border-bottom:none;
     }
-    nav li:first-child {
+    #en-cours {
         border-top: 1px solid #0065fc;
         border-bottom: none;
     }
