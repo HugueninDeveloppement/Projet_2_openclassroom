@@ -82,13 +82,11 @@ nav li:hover > a {
     color: #0065fc;
 }
 
-nav li:active {
+nav li:active{
     border-bottom: 3px solid #0065fc;
 }
 
-nav li:active > a {
-    color: #0065fc;
-}
+
 
 
 /*Section recherche*/

@@ -3,11 +3,13 @@
     "",
     "\\images",
     "\\images\\Desktop",
+    "\\images\\Desktop\\Activités",
+    "\\images\\Desktop\\Activités\\2_large",
     "\\images\\Desktop\\Hebergements",
-    "\\images\\Mobile",
-    "\\images\\Mobile\\Hebergements",
+    "\\images\\Desktop\\Hebergements\\4_small",
+    "\\images\\Mobile\\Hebergements\\2_large",
     "\\images\\Mobile\\Hebergements\\3_medium"
   ],
-  "SelectedNode": "\\images\\Desktop\\Hebergements\\4_small",
+  "SelectedNode": "\\images\\Desktop\\Activités",
   "PreviewInSolutionExplorer": false
 }
