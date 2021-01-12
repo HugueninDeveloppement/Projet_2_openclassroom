@@ -24,6 +24,10 @@ header{
     margin-top:2em;
     display:flex;
     flex-direction:column;
+    position:sticky;
+    top:0;
+    background-color:white;
+
 }
 
 #header_mobile{
@@ -78,11 +82,11 @@ nav li:hover > a {
     color: #0065fc;
 }
 
-#en-cours {
+nav li:active {
     border-bottom: 3px solid #0065fc;
 }
 
-#en-cours a {
+nav li:active > a {
     color: #0065fc;
 }
 
@@ -610,9 +614,13 @@ footer{
         border-top: 1px solid #0065fc;
         border-bottom:none;
     }
-    #en-cours {
+
+    nav li:active {
         border-top: 1px solid #0065fc;
-        border-bottom: none;
+    }
+
+    nav li:active >a{
+        color:#0065fc;
     }
 
     #btn_inscription {
@@ -730,12 +738,12 @@ footer{
     }
 
     .detail_vignette_activite {
-        width: 47%;
+        width: 47%;     
     }
 
     .detail_vignette_activite img{
         width:100%;
-        height:390px;
+        height:450px;
     }
 
     .vignette_activite_double {
@@ -752,7 +760,7 @@ footer{
         height: 208px;
     }
 
-    .vignette_activite_double .detail_vignette_activite:nth-child(2) > img{
+    .vignette_activite_double .detail_vignette_activite:nth-child(2) > a img{
         height: 174px;
     }
 
