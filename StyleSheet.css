@@ -433,8 +433,17 @@ footer{
         padding-left: 3em;
     }
 
+    #bouton_recherche_mobile{
+        display:none;
+    }
+
     #bouton_recherche_desktop {
+        display: block;
         width: 125px;
+        color: white;
+        background-color: #0065fc;
+        border-radius: 0px 10px 10px 0px;
+        font-size: 0.9em;
     }
 
     #hebergement_populaire {
