@@ -438,7 +438,7 @@ footer{
     }
 
     #btn_inscription:hover {
-        padding-bottom:0.7em;
+        padding-bottom: 0.7em;
         border-bottom: 3px solid #0065fc;
     }
 
@@ -612,6 +612,12 @@ footer{
     }
 
     nav li:hover {
+        padding-top: 2.4em;
+        border-top: 1px solid #0065fc;
+        border-bottom: none;
+    }
+
+    #btn_inscription:hover {
         padding-top: 2.4em;
         border-top: 1px solid #0065fc;
         border-bottom: none;
