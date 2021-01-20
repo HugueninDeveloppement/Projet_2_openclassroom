@@ -20,63 +20,64 @@ body {
     margin:0px;
 }
 
-header{
-    margin-top:2em;
-    display:flex;
-    flex-direction:column;
-    position:sticky;
-    top:0;
-    background-color:white;
-
+header {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: white;
 }
 
-#header_mobile{
-    display:flex;
-    flex-direction:row;
-    justify-content:space-between;
-    padding:0em 1em 0em 1em;
-}
-
-#inscription_telephone{
-    display:flex;
-    align-items:center;
-}
-
-#inscription_telephone a {
-    text-decoration:none;
-    color:#0065fc;
-    font-size:1.2em;
-    padding-right:1em;
-}
-
-nav ul{
-    display:flex;
-    flex-direction:row;
-    justify-content:space-between;
-    padding:0px;
-}
-
-#inscription_desktop{
-    display:none;
-}
-
-nav li {
-    list-style-type: none;
-    border-bottom: 3px solid #f2f2f2;
-    width: 50%;
-    text-align: center;
-}
-
-nav li a {
-    display: inline-block;
-    width:100%;
-    padding-bottom: 0.7em;
+header a {
     text-decoration: none;
     color: black;
-    font-size: 1.2em;
+}
+
+.header_logo{
+    width:40%;
+    padding-left:1em;
+}
+
+.header_nav {
+    width: 100%;
+    order: 3;
+}
+
+
+.header_nav ul {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0px;
+}
+
+.header_nav ul li {
+    list-style-type: none;
+    width: 50%;
+    text-align: center;
+    padding-bottom:0.7em;
+}
+
+#btn_inscription {
+    order: 2;
+    border: none;
+    background-color: white;
+    padding: 1em;
+    width:40%;
+    display:block;
+}
+
+#btn_inscription a {
+    color: #0065fc;
+    font-size:1.2em;
 }
 
 nav li:hover {
+    padding-bottom:0.5em;
     border-bottom: 3px solid #0065fc;
 }
 
@@ -412,16 +413,41 @@ footer{
 /*Media Queries Tablette*/
 @media only screen and (min-width: 768px){
 
-    #header_mobile {
+    .header_logo {
+        width: 100%;
+        display: flex;
         justify-content: center;
+        margin-bottom:0.3em;
     }
 
-    #inscription_telephone {
-        display: none;
+    .header_nav {
+        width: 70%;
     }
 
-    #inscription_desktop {
-        display: block;
+    .header_nav ul{
+        margin-bottom:0px;
+    }
+
+    #btn_inscription {
+        width: 30%;
+        order: 4;
+    }
+
+    #btn_inscription a {
+        color: black;
+    }
+
+    #btn_inscription:hover {
+        padding-bottom:0.7em;
+        border-bottom: 3px solid #0065fc;
+    }
+
+    #btn_inscription:hover > a {
+        color: #0065fc;
+    }
+
+    #btn_inscription:active {
+        border-bottom: 3px solid #0065fc;
     }
 
     #formulaire_recherche {
@@ -513,7 +539,7 @@ footer{
 /*Media Queries Ordinateur Portable*/
 @media only screen and (min-width: 1100px){
 
-
+    
     .detail_vignette_populaire img {
         width: 40%;
     }
@@ -546,76 +572,60 @@ footer{
 
 /*Media Queries Ordinateur*/
 @media only screen and (min-width: 1299px) {
-
     header {
+        flex-wrap: nowrap;
+        margin-top: 0px;
+    }
+
+
+    .header_logo {
+        width: 80%;
+        justify-content: start;
+    }
+
+    .header_logo img {
+        margin-top: 2em;
+    }
+
+    .header_nav {
+        width: 18%;
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-content: center;
-        margin-top: 0em;
-        padding: 0px 50px;
+        padding: 0px;
+        margin: 0px
     }
 
-    main{
-        padding:0em 2.3em;
+    .header_nav ul {
+        margin-top: 0px;
     }
 
-    #header_mobile{
-        align-content:center;
-
+    .header_nav ul li {
+        padding-top: 2.5em;
     }
 
-    header img {
-        height: 30px;
-        width: 93px;
-        margin:auto;
-        padding-top:1em;
-        object-fit: cover;
-    }
-
-
-    header nav {
-        display: flex;
-        flex-direction: row;
-        justify-content:flex-start;
-        padding:0em 1.2em;
-    }
-
-    header nav ul {
-        justify-content: flex-end;
-        width: 100%;
-        margin: 0px;
-    }
-
-    header nav li {
-        border-bottom:none;
-        margin-right: 25px;
-        margin-left: 44px;
-        font-size: 0.9em;
-    }
-
-    header nav a {
-        color: black;
-        text-decoration: none;        
-        padding-top: 50px;
-    }
-
-    nav li:hover {
-        border-top: 1px solid #0065fc;
-        border-bottom:none;
-    }
-
-    nav li:active {
-        border-top: 1px solid #0065fc;
-    }
-
-    nav li:active >a{
-        color:#0065fc;
+    .header_nav ul li a {
+        padding-top: 2em;
     }
 
     #btn_inscription {
-        color: #0065fc;
+        padding-top: 2.4em;
+        width: 7%;
+        order: 4;
     }
+
+    nav li:hover {
+        padding-top: 2.4em;
+        border-top: 1px solid #0065fc;
+        border-bottom: none;
+    }
+
+    #btn_inscription:hover {
+        padding-top: 2.35em;
+        border-top: 1px solid #0065fc;
+        border-bottom: none;
+    }
+
+   
+    
 
     main{
         padding-top:1.3em;
