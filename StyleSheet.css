@@ -45,6 +45,7 @@ header a {
 .header_nav {
     width: 100%;
     order: 3;
+    margin-top:0.6em;
 }
 
 
@@ -59,7 +60,7 @@ header a {
     list-style-type: none;
     width: 50%;
     text-align: center;
-    padding-bottom:0.7em;
+    padding-bottom:0.9em;
 }
 
 #btn_inscription {
@@ -74,10 +75,10 @@ header a {
 #btn_inscription a {
     color: #0065fc;
     font-size:1.2em;
+    font-weight:bold;
 }
 
 nav li:hover {
-    padding-bottom:0.5em;
     border-bottom: 3px solid #0065fc;
 }
 
@@ -85,9 +86,7 @@ nav li:hover > a {
     color: #0065fc;
 }
 
-nav li:active{
-    border-bottom: 3px solid #0065fc;
-}
+
 
 
 
@@ -435,6 +434,7 @@ footer{
 
     #btn_inscription a {
         color: black;
+        font-weight:normal;
     }
 
     #btn_inscription:hover {
@@ -529,7 +529,6 @@ footer{
     }
 
     footer{
-        display:flex;
         flex-direction:row;
         padding:1.5em 4.5em 1.5em 1em;
     }
@@ -548,10 +547,6 @@ footer{
         font-size: 1.2em;
         margin-top:0.5em;
         padding:0em 0em 0.3em 0.3em;
-    }
-
-    .triplette {
-        width: 48%;
     }
 
     #detail_vignette_activite img{
@@ -579,7 +574,7 @@ footer{
 
 
     .header_logo {
-        width: 80%;
+        width: 65%;
         justify-content: start;
     }
 
@@ -588,8 +583,7 @@ footer{
     }
 
     .header_nav {
-        width: 18%;
-        display: flex;
+        width: 26%;
         padding: 0px;
         margin: 0px
     }
@@ -608,8 +602,13 @@ footer{
 
     #btn_inscription {
         padding-top: 2.4em;
-        width: 7%;
+        width: 10%;
         order: 4;
+    }
+
+    #btn_inscription a {
+        padding-right:2em;
+        color: #0065fc;
     }
 
     nav li:hover {
@@ -617,16 +616,7 @@ footer{
         border-top: 1px solid #0065fc;
         border-bottom: none;
     }
-
-    #btn_inscription:hover {
-        padding-top: 2.35em;
-        border-top: 1px solid #0065fc;
-        border-bottom: none;
-    }
-
-   
-    
-
+ 
     main{
         padding-top:1.3em;
     }
@@ -636,7 +626,6 @@ footer{
     }
 
     #filtre_recherche{
-        display:flex;
         flex-direction:row;
         align-content:center;
         align-items:center;
@@ -722,7 +711,6 @@ footer{
     }
 
     .triplette {
-        display: flex;
         flex-direction: row;
         justify-content: space-between;
         width: 48.5%;
@@ -730,8 +718,6 @@ footer{
     }
 
     .vignette_activite{
-        display:flex;
-        flex-direction:row;
         justify-content:space-between;
     }
 
