@@ -413,8 +413,6 @@ footer{
 @media only screen and (min-width: 768px){
 
     #header_mobile {
-        display: flex;
-        flex-direction: row;
         justify-content: center;
     }
 
@@ -563,8 +561,6 @@ footer{
     }
 
     #header_mobile{
-        display:flex;
-        flex-direction:row;
         align-content:center;
 
     }
@@ -586,15 +582,12 @@ footer{
     }
 
     header nav ul {
-        display: flex;
-        flex-direction: row;
         justify-content: flex-end;
         width: 100%;
         margin: 0px;
     }
 
     header nav li {
-        list-style-type: none;
         border-bottom:none;
         margin-right: 25px;
         margin-left: 44px;
@@ -641,7 +634,6 @@ footer{
 
     #filtre_recherche ul{
         width:60%;
-        display:flex;
         justify-content:space-between;
         align-content:center;
         margin-left:1.2em;
@@ -683,7 +675,6 @@ footer{
     }
 
     #vignettes_hebergement_populaire {
-        display: flex;
         flex-direction: column;
         align-items:center;
     }
@@ -744,7 +735,6 @@ footer{
     }
 
     .vignette_activite_double {
-        display: flex;
         flex-direction: column;
         width:47%;
     }
@@ -768,8 +758,6 @@ footer{
 
     footer {
         font-size: 1.2em;
-        display:flex;
-        flex-direction:row;
         justify-content:flex-start;
         padding: 1.5em 4.5em 1.5em 2.5em;
     }
