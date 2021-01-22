@@ -86,6 +86,11 @@ nav li:hover > a {
     color: #0065fc;
 }
 
+#btn_inscription:focus {
+    outline-style:none;
+    
+}
+
 
 
 
